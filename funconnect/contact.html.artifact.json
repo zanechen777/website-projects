@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "html",
+  "title": "funconnect-hk-website-package/contact.html",
+  "entry": "funconnect-hk-website-package/contact.html",
+  "renderer": "html",
+  "status": "complete",
+  "exports": [
+    "html",
+    "pdf",
+    "zip"
+  ],
+  "createdAt": "2026-06-24T08:30:27.784Z",
+  "updatedAt": "2026-06-24T08:30:27.784Z",
+  "metadata": {
+    "inferred": true,
+    "reconciled": true
+  }
+}

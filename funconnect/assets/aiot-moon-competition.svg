@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">AIoT 月球迷宮智能比賽概念圖</title>
+  <desc id="desc">學生使用 AI Agent 指令控制月球車，穿越月球表面迷宮賽道。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f6fbfb"/>
+      <stop offset=".62" stop-color="#dce9ed"/>
+      <stop offset="1" stop-color="#c7d6dd"/>
+    </linearGradient>
+    <linearGradient id="track" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef1ed"/>
+      <stop offset="1" stop-color="#cfd6cf"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#1d3043" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="820" rx="38" fill="url(#bg)"/>
+  <circle cx="1010" cy="130" r="86" fill="#fff" opacity=".65"/>
+  <path d="M145 560 C265 380 425 280 650 250 C830 226 995 290 1068 440 C1128 565 1002 675 760 702 C520 730 250 690 145 560Z" fill="url(#track)" filter="url(#shadow)"/>
+  <path d="M263 541 C350 435 465 381 633 363 C777 348 913 388 974 470" fill="none" stroke="#f9fbf8" stroke-width="58" stroke-linecap="round"/>
+  <path d="M318 544 C393 470 500 430 642 415 C760 403 862 430 920 486" fill="none" stroke="#9aa8a3" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 28"/>
+  <g fill="#aeb8b2" opacity=".78">
+    <circle cx="405" cy="548" r="38"/><circle cx="812" cy="430" r="42"/><circle cx="608" cy="634" r="29"/>
+  </g>
+  <g fill="#8e9c98" opacity=".45">
+    <circle cx="405" cy="548" r="22"/><circle cx="812" cy="430" r="23"/><circle cx="608" cy="634" r="16"/>
+  </g>
+  <g transform="translate(660 468)" filter="url(#shadow)">
+    <rect x="0" y="32" width="158" height="72" rx="18" fill="#182633"/>
+    <rect x="30" y="0" width="98" height="52" rx="14" fill="#263849"/>
+    <circle cx="28" cy="109" r="20" fill="#0e171f"/><circle cx="128" cy="109" r="20" fill="#0e171f"/>
+    <circle cx="28" cy="109" r="8" fill="#59c7a9"/><circle cx="128" cy="109" r="8" fill="#59c7a9"/>
+    <rect x="48" y="13" width="62" height="10" rx="5" fill="#59c7a9"/>
+    <path d="M79 0 L105 -42" stroke="#263849" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="110" cy="-48" r="11" fill="#f3b24d"/>
+  </g>
+  <g transform="translate(125 118)" filter="url(#shadow)">
+    <rect width="370" height="250" rx="28" fill="#13202c"/>
+    <rect x="26" y="24" width="318" height="42" rx="13" fill="#1f3141"/>
+    <circle cx="54" cy="45" r="7" fill="#59c7a9"/><circle cx="78" cy="45" r="7" fill="#f3b24d"/><circle cx="102" cy="45" r="7" fill="#e0665d"/>
+    <path d="M42 112 L124 112 L124 164 L196 164 L196 120 L284 120" fill="none" stroke="#59c7a9" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="42" y="192" width="92" height="18" rx="9" fill="#e9f6f2" opacity=".86"/>
+    <rect x="154" y="192" width="128" height="18" rx="9" fill="#f3b24d" opacity=".92"/>
+  </g>
+  <g transform="translate(892 592)">
+    <rect width="198" height="78" rx="18" fill="#fff" opacity=".88"/>
+    <circle cx="38" cy="39" r="16" fill="#f3b24d"/>
+    <rect x="68" y="24" width="92" height="10" rx="5" fill="#475b66" opacity=".65"/>
+    <rect x="68" y="44" width="58" height="10" rx="5" fill="#59c7a9"/>
+  </g>
+</svg>

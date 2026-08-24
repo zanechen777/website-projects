@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tech Connect SME | Terms of Service & Refund Policy</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      --ink: #071018;
+      --navy: #071b2d;
+      --cyan: #13d8d3;
+      --cyan-soft: #e8fbfb;
+      --paper: #f7f3eb;
+      --white: #ffffff;
+      --muted: #5c6670;
+      --line: #d9e2e8;
+      --radius: 24px;
+      --font-ui: "Segoe UI Variable", "Segoe UI", "Microsoft JhengHei UI", "Microsoft JhengHei", "PingFang HK", "PingFang TC", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: var(--font-ui);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #fafbfc;
+      color: var(--ink);
+      font: 16px/1.65 var(--font-ui);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body[data-lang="zh-hant"] [data-locale]:not([data-locale="zh-hant"]),
+    body[data-lang="en"] [data-locale]:not([data-locale="en"]) {
+      display: none !important;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* Top bar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      min-height: 72px;
+      background: rgba(7, 16, 24, .94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .topbar .wrap {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      width: min(1220px, calc(100% - 44px));
+      margin: 0 auto;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+    }
+    .brand-mark { width: 44px; height: 44px; border-radius: 12px; background: #fff; display: grid; place-items: center; padding: 4px; }
+    .brand-mark img { width: 100%; height: 100%; object-fit: contain; }
+    .brand-name { font-weight: 850; font-size: 1rem; letter-spacing: -0.02em; }
+    .lang-toggle {
+      display: inline-grid; grid-template-columns: 1fr 1fr;
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px; padding: 4px;
+    }
+    .lang-toggle button {
+      border: 0; border-radius: 999px; background: transparent;
+      color: rgba(255,255,255,.72); padding: 7px 14px; font-weight: 750; font-size: .86rem; cursor: pointer;
+    }
+    .lang-toggle button[aria-pressed="true"] { background: var(--white); color: var(--ink); }
+
+    /* Page header */
+    .page-header {
+      background: linear-gradient(175deg, #050b12 0%, #071b2d 55%, #041018 100%);
+      color: var(--white);
+      padding: 56px 0 48px;
+      text-align: center;
+    }
+    .page-header h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+    .page-meta {
+      margin-top: 14px;
+      font-size: .88rem;
+      color: rgba(255,255,255,.55);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px 22px;
+    }
+
+    /* Layout */
+    .wrap { width: min(1120px, calc(100% - 44px)); margin: 0 auto; }
+    .terms-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 48px;
+      align-items: start;
+      padding: 52px 0 80px;
+    }
+
+    /* TOC */
+    .toc {
+      position: sticky;
+      top: 100px;
+    }
+    .toc-title {
+      font-size: .78rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+    .toc-list {
+      list-style: none;
+      margin: 0; padding: 0;
+    }
+    .toc-list li { margin-bottom: 2px; }
+    .toc-list a {
+      display: block;
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-size: .94rem;
+      color: var(--muted);
+      transition: background .15s, color .15s;
+      border-left: 3px solid transparent;
+    }
+    .toc-list a:hover,
+    .toc-list a.active { background: var(--cyan-soft); color: #057a75; border-left-color: var(--cyan); }
+
+    /* Content */
+    .terms-content h2 {
+      margin: 0 0 16px;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      scroll-margin-top: 100px;
+    }
+    .terms-content section { margin-bottom: 48px; }
+    .terms-content h3 {
+      margin: 20px 0 8px;
+      font-size: 1.08rem;
+      font-weight: 760;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+    .terms-content p {
+      margin: 0 0 14px;
+      font-size: .98rem;
+      line-height: 1.78;
+      color: var(--muted);
+    }
+    .terms-content p:last-child { margin-bottom: 0; }
+
+    /* Footer */
+    .site-footer {
+      background: var(--ink);
+      color: rgba(255,255,255,.55);
+      padding: 32px 0;
+      font-size: .88rem;
+      text-align: center;
+    }
+    .site-footer a { color: rgba(255,255,255,.72); transition: color .15s; }
+    .site-footer a:hover { color: var(--cyan); }
+    .site-footer .wrap {
+      display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px;
+    }
+
+    /* Print */
+    @media print {
+      .topbar, .site-footer { display: none; }
+      body { background: #fff; font-size: 12pt; }
+      .terms-layout { display: block; }
+      .toc { display: none; }
+      .page-header { background: #fff; color: #000; padding: 20px 0; }
+    }
+
+    /* Mobile */
+    @media (max-width: 860px) {
+      .terms-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 36px 0 64px;
+      }
+      .toc { position: static; }
+      .toc-list { display: flex; flex-wrap: wrap; gap: 6px; }
+      .toc-list li { margin: 0; }
+      .toc-list a { padding: 7px 12px; font-size: .85rem; border-left: 0; border-bottom: 2px solid transparent; border-radius: 0; }
+      .toc-list a.active { border-bottom-color: var(--cyan); }
+      .wrap { width: min(100% - 28px, 1120px); }
+      .page-header { padding: 40px 0 36px; }
+    }
+  </style>
+</head>
+<body data-lang="zh-hant">
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="Tech Connect SME">
+        <span class="brand-mark">
+          <img src="techconnect-logo-zh-clean.png" alt="Tech Connect SME logo" />
+        </span>
+        <span class="brand-name" data-locale="zh-hant">微企科技連線</span>
+        <span class="brand-name" data-locale="en">Tech Connect SME</span>
+      </a>
+      <div class="lang-toggle" aria-label="Language">
+        <button type="button" data-lang-btn="zh-hant" aria-pressed="true">繁中</button>
+        <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="wrap">
+      <h1 data-locale="zh-hant">服務條款與退款政策</h1>
+      <h1 data-locale="en">Terms of Service &amp; Refund Policy</h1>
+      <div class="page-meta">
+        <span data-locale="zh-hant">版本：1.0</span><span data-locale="en">Version: 1.0</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap terms-layout">
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title" data-locale="zh-hant">目錄</div>
+        <div class="toc-title" data-locale="en">Contents</div>
+        <ol class="toc-list">
+          <li><a href="#s1" data-locale="zh-hant">1. 訂閱與自動續訂</a><a href="#s1" data-locale="en">1. Subscription &amp; Auto-Renewal</a></li>
+          <li><a href="#s2" data-locale="zh-hant">2. 嚴格無退款政策</a><a href="#s2" data-locale="en">2. Strict No-Refund Policy</a></li>
+          <li><a href="#s3" data-locale="zh-hant">3. 服務終止、取消與不可抗力</a><a href="#s3" data-locale="en">3. Termination, Cancellation &amp; Force Majeure</a></li>
+          <li><a href="#s4" data-locale="zh-hant">4. 服務範疇與功能限制</a><a href="#s4" data-locale="en">4. Scope of Service &amp; Features</a></li>
+          <li><a href="#s5" data-locale="zh-hant">5. 數據與免責聲明</a><a href="#s5" data-locale="en">5. Data &amp; Liability Disclaimer</a></li>
+          <li><a href="#s6" data-locale="zh-hant">6. 條款修改權</a><a href="#s6" data-locale="en">6. Amendments</a></li>
+        </ol>
+      </nav>
+
+      <div class="terms-content">
+        <section id="s1">
+          <h2 data-locale="zh-hant">1. 訂閱與自動續訂</h2>
+          <h2 data-locale="en">1. Subscription &amp; Auto-Renewal</h2>
+          <div data-locale="zh-hant"><p>本服務採用訂閱制（按月/按年）計費。除非您在當期訂閱週期結束前至少 24小時 透過系統後台取消訂閱，否則系統將視為您同意續訂，並自動從您綁定的支付方式中扣除下一期的費用。</p></div>
+          <div data-locale="en"><p>The Service is billed on a subscription basis (monthly/annually). Unless you cancel your subscription through the system dashboard at least 24 hours prior to the end of the current billing cycle, it will be deemed that you agree to renew, and the system will automatically deduct the fee for the next cycle from your linked payment method.</p></div>
+        </section>
+
+        <section id="s2">
+          <h2 data-locale="zh-hant">2. 嚴格無退款政策</h2>
+          <h2 data-locale="en">2. Strict No-Refund Policy</h2>
+          <div data-locale="zh-hant"><p>所有已支付的訂閱費用在任何情況下均不予退還。若您在訂閱週期中途取消服務，您可以繼續使用服務至該計費週期結束，但本公司不會對該週期內剩餘的天數進行按比例（Pro-rata）的退款或折抵。</p></div>
+          <div data-locale="en"><p>All subscription fees paid are strictly non-refundable under any circumstances. If you cancel your service in the middle of a subscription cycle, you may continue to access the Service until the end of that billing cycle, but the Company will not provide any pro-rata refund or credit for the remaining days of that cycle.</p></div>
+        </section>
+
+        <section id="s3">
+          <h2 data-locale="zh-hant">3. 服務終止、取消與不可抗力</h2>
+          <h2 data-locale="en">3. Service Termination, Cancellation &amp; Force Majeure</h2>
+          <div data-locale="zh-hant">
+            <p>本公司保留隨時修改、暫停或終止本服務（或其任何部分）的權利。本公司有權因系統維護、技術更新、用戶違反使用守則，或本公司自身商業策略調整，而終止提供服務。</p>
+            <h3>不可抗力免責</h3>
+            <p>若因不可抗力事件（包括但不限於天災、戰爭、政府法令變更、大規模網絡癱瘓、第三方基礎設施故障等不可抗逆因素）導致本服務暫停或終止，本公司適用「嚴格無退款政策」，不承擔任何退款或損害賠償責任。</p>
+            <h3>最低退款保障</h3>
+            <p>除上述不可抗力事件外，若本公司純粹因自身商業原因（非因用戶違規）而主動「提前終止」您已付費的服務，本公司的最大法律責任僅限於退還您當期未使用的剩餘天數之比例費用（以本公司計算為準）。除此以外，本公司無需承擔任何額外的賠償責任。</p>
+          </div>
+          <div data-locale="en">
+            <p>The Company reserves the right to modify, suspend, or terminate the Service (or any part thereof) at any time. The Company has the right to terminate the service due to system maintenance, technical upgrades, user violations of the terms of use, or the Company's own business strategy adjustments.</p>
+            <h3>Force Majeure</h3>
+            <p>If the Service is suspended or terminated due to a Force Majeure event (including but not limited to natural disasters, acts of God, war, changes in government regulations, large-scale network outages, third-party infrastructure failures, or other uncontrollable factors), the strict no-refund policy shall apply, and the Company shall bear no liability for any refund or compensation.</p>
+            <h3>Minimum Refund Protection</h3>
+            <p>Excluding the aforementioned Force Majeure events, if the Company proactively terminates your paid service early due to its own commercial strategic adjustments (and not due to user violation), the Company's maximum legal liability is strictly limited to refunding the pro-rata fee for the remaining unused days in your current cycle (as calculated by the Company). Beyond this, the Company shall bear no additional compensation or liability.</p>
+          </div>
+        </section>
+
+        <section id="s4">
+          <h2 data-locale="zh-hant">4. 服務範疇與功能限制</h2>
+          <h2 data-locale="en">4. Scope of Service &amp; Features</h2>
+          <div data-locale="zh-hant"><p>本服務之具體功能範疇以本公司官方網站公佈的「基本功能清單（Basic Features List）」為準。本服務僅依「現狀（As-Is）」及「現有（As-Available）」狀態提供。本公司保留隨時升級、修改、移除或優化系統功能的權利，且無需對特定功能的變更承擔通知或賠償責任。任何超出基本功能清單的客製化需求，均不屬於本訂閱服務之範疇。</p></div>
+          <div data-locale="en"><p>The specific scope of the Service shall be defined by the "Basic Features List" published on the Company's official website. The Service is provided on an "As-Is" and "As-Available" basis. The Company reserves the right to upgrade, modify, remove, or optimize system features at any time, without any obligation to notify or compensate users for such changes. Any customization requests exceeding the Basic Features List are strictly excluded from this subscription service.</p></div>
+        </section>
+
+        <section id="s5">
+          <h2 data-locale="zh-hant">5. 數據與免責聲明</h2>
+          <h2 data-locale="en">5. Data &amp; Liability Disclaimer</h2>
+          <div data-locale="zh-hant">
+            <h3>記帳與稅務免責</h3>
+            <p>本服務僅作為記帳與數據整理之工具。本服務所產生的任何報表、數據或分析，均不構成專業的會計、審計、稅務或法律建議。用戶應自行核對數據的準確性。因數據錯誤、遺漏或誤解而導致的任何財務損失，本公司概不負責。</p>
+            <h3>數據安全</h3>
+            <p>本公司將盡商業上的合理努力保護您的數據安全，但對於因駭客攻擊、網絡故障、不可抗力或第三方服務商中斷而導致的數據丟失、洩露或服務中斷，本公司不承擔任何直接或間接的損害賠償責任。</p>
+          </div>
+          <div data-locale="en">
+            <h3>Bookkeeping &amp; Tax Disclaimer</h3>
+            <p>The Service is provided solely as a tool for bookkeeping and data organization. Any reports, data, or analytics generated by the Service do not constitute professional accounting, auditing, tax, or legal advice. Users must independently verify the accuracy of all data. The Company shall not be held liable for any financial losses resulting from data errors, omissions, or misunderstandings.</p>
+            <h3>Data Security</h3>
+            <p>The Company will use commercially reasonable efforts to secure your data. However, the Company assumes no liability for any direct or indirect damages resulting from data loss, leakage, or service interruptions caused by hacker attacks, network failures, force majeure, or disruptions from third-party service providers.</p>
+          </div>
+        </section>
+
+        <section id="s6">
+          <h2 data-locale="zh-hant">6. 條款修改權</h2>
+          <h2 data-locale="en">6. Amendments</h2>
+          <div data-locale="zh-hant"><p>本公司保留隨時修改本條款的權利。修改後的條款一經在網站公佈即時生效。若您在條款修改後繼續使用服務，即代表您接受修改後的條款。</p></div>
+          <div data-locale="en"><p>The Company reserves the right to modify these terms at any time. The amended terms shall become effective immediately upon being posted on the website. Your continued use of the Service after any amendments constitutes your acceptance of the updated terms.</p></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <span>&copy; 2026 Tech Connect SME</span>
+      <a href="index.html" data-locale="zh-hant">返回首頁</a>
+      <a href="index.html" data-locale="en">Back to Home</a>
+      <a href="mailto:general@techforliving.ai">general@techforliving.ai</a>
+    </div>
+  </footer>
+
+  <script>
+    var langBtns = Array.from(document.querySelectorAll('[data-lang-btn]'));
+    function setLang(lang) {
+      document.body.dataset.lang = lang;
+      document.documentElement.lang = lang === 'en' ? 'en' : 'zh-Hant';
+      langBtns.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.langBtn === lang)); });
+      try { localStorage.setItem('techconnect-sme:terms:lang', lang); } catch (_) {}
+    }
+    langBtns.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.langBtn); }); });
+    try { var s = localStorage.getItem('techconnect-sme:terms:lang'); if (s === 'zh-hant' || s === 'en') setLang(s); } catch (_) {}
+
+    // Active TOC link on scroll
+    (function () {
+      var links = Array.from(document.querySelectorAll('.toc-list a[href^="#"]'));
+      var sections = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); }).filter(Boolean);
+      if (!sections.length) return;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            links.forEach(function (a) { a.classList.remove('active'); });
+            var match = links.find(function (a) { return a.getAttribute('href') === '#' + entry.target.id; });
+            if (match) match.classList.add('active');
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px' });
+      sections.forEach(function (s) { observer.observe(s); });
+    })();
+  </script>
+</body>
+</html>
