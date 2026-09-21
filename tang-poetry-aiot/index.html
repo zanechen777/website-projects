@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="詩境是一個以 WebSerial、micro:bit、Qwen RAG、TTS 與 Cloudflare 建構的唐詩環境感知體驗。" />
-  <meta property="og:title" content="詩境 · Tang Poetry Ambient Intelligence" />
+  <meta name="description" content="FunConnect 是一個以 WebSerial、micro:bit、Qwen RAG、TTS 與 Cloudflare 建構的唐詩環境感知體驗。" />
+  <meta property="og:title" content="FunConnect · Tang Poetry Ambient Intelligence" />
   <meta property="og:description" content="以 micro:bit 感知環境，讓人工智慧從《唐詩三百首》中回應當下。" />
   <meta property="og:image" content="https://zanechen777.github.io/website-projects/tang-poetry-aiot/project-preview.png" />
   <meta name="theme-color" content="#ebe9f4" />
-  <title>詩境 · Tang Poetry Ambient Intelligence</title>
+  <title>FunConnect · Tang Poetry Ambient Intelligence</title>
   <style>
     :root {
       color-scheme: light;
@@ -110,9 +110,9 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(58px, 9vw, 104px);
+      font-size: clamp(50px, 7vw, 78px);
       font-weight: 500;
-      letter-spacing: .04em;
+      letter-spacing: -.035em;
       line-height: .96;
     }
 
@@ -215,8 +215,28 @@
       display: block;
       width: 100%;
       aspect-ratio: 16 / 9;
-      border-radius: 22px;
       object-fit: cover;
+    }
+
+    .preview-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+    }
+
+    .preview-name {
+      position: absolute;
+      inset: 0 auto 0 0;
+      display: flex;
+      align-items: center;
+      width: 50%;
+      padding-left: 7%;
+      background: linear-gradient(90deg, rgba(237, 235, 246, .99) 0 78%, rgba(237, 235, 246, 0));
+      color: #3f497c;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(24px, 4vw, 44px);
+      font-weight: 700;
+      letter-spacing: -.04em;
     }
 
     .visual-caption {
@@ -432,7 +452,7 @@
     <section class="hero" aria-labelledby="project-title">
       <div>
         <p class="eyebrow">Project 03 · AI × IoT × Tang Poetry</p>
-        <h1 id="project-title">詩境</h1>
+        <h1 id="project-title">FunConnect</h1>
         <p class="title-en">Tang Poetry Ambient Intelligence</p>
         <p class="lead">
           以 micro:bit 感知環境，讓人工智慧從《唐詩三百首》中回應當下。
@@ -445,7 +465,10 @@
       </div>
 
       <figure class="hero-visual">
-        <img src="./project-preview.png" alt="詩境專案視覺：唐詩、環境感知器與氛圍燈" />
+        <div class="preview-frame">
+          <img src="./project-preview.png" alt="FunConnect 專案視覺：唐詩、環境感知器與氛圍燈" />
+          <span class="preview-name" aria-hidden="true">FunConnect</span>
+        </div>
         <figcaption class="visual-caption">
           <span>唐詩 · 環境感知 · 氛圍燈</span>
           <span>Tang poetry · sensing · ambient light</span>
@@ -504,7 +527,7 @@
 
     <section class="launch-panel" aria-labelledby="launch-title">
       <div>
-        <h2 id="launch-title">進入詩境 · Enter the experience</h2>
+        <h2 id="launch-title">進入 FunConnect · Enter the experience</h2>
         <p>你可以直接體驗 AI 唐詩對話；若要使用實體感測功能，請以 Chrome 或 Edge 開啟，並連接已燒錄相容程式的 micro:bit。</p>
         <p class="requirements">Try the AI poetry conversation immediately. Hardware sensing requires Chrome or Edge and a compatible programmed micro:bit.</p>
       </div>
@@ -513,7 +536,7 @@
   </main>
 
   <footer class="shell">
-    <span>Poetic Realm · 詩境</span>
+    <span>FunConnect</span>
     <span>This introduction is hosted on GitHub Pages. The live application runs on Cloudflare Workers.</span>
   </footer>
 </body>

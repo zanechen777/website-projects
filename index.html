@@ -116,6 +116,7 @@
     .poetry { --accent: var(--poetry); }
 
     .poetry .logo-wrap {
+      position: relative;
       padding: 0;
       overflow: hidden;
       background: #eeedf8;
@@ -127,6 +128,21 @@
       max-width: none;
       max-height: none;
       object-fit: cover;
+    }
+
+    .poetry .preview-name {
+      position: absolute;
+      inset: 0 auto 0 0;
+      display: flex;
+      align-items: center;
+      width: 52%;
+      padding-left: 7%;
+      background: linear-gradient(90deg, rgba(237, 235, 246, .99) 0 78%, rgba(237, 235, 246, 0));
+      color: #3f497c;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(20px, 2.2vw, 29px);
+      font-weight: 700;
+      letter-spacing: -.035em;
     }
 
     footer {
@@ -183,9 +199,12 @@
       </a>
 
       <a class="project poetry" href="./tang-poetry-aiot/">
-        <div class="logo-wrap"><img src="./tang-poetry-aiot/project-preview.png" alt="Poetic Realm Tang poetry ambient intelligence project" /></div>
+        <div class="logo-wrap">
+          <img src="./tang-poetry-aiot/project-preview.png" alt="FunConnect Tang poetry ambient intelligence project" />
+          <span class="preview-name" aria-hidden="true">FunConnect</span>
+        </div>
         <div class="project-copy">
-          <h2>Poetic Realm · 詩境</h2>
+          <h2>FunConnect</h2>
           <p>An AIoT experience connecting live micro:bit sensor data with Tang poetry.</p>
           <span class="open">View project →</span>
         </div>
