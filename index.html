@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A collection of three website projects spanning AIoT education, SME workflows, and an interactive Tang poetry experience." />
+  <meta name="description" content="A simple collection of two website projects: FunConnect AIoT and TechConnect SME." />
   <title>Website Projects</title>
   <style>
     :root {
@@ -14,7 +14,6 @@
       --surface: rgba(255, 255, 255, .88);
       --green: #0d7659;
       --blue: #145f8d;
-      --poetry: #4b568e;
     }
 
     * { box-sizing: border-box; }
@@ -63,7 +62,7 @@
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
       margin-top: 52px;
     }
@@ -113,37 +112,6 @@
     .open { display: inline-block; margin-top: 20px; color: var(--accent); font-weight: 800; }
     .fun { --accent: var(--green); }
     .tech { --accent: var(--blue); }
-    .poetry { --accent: var(--poetry); }
-
-    .poetry .logo-wrap {
-      position: relative;
-      padding: 0;
-      overflow: hidden;
-      background: #eeedf8;
-    }
-
-    .poetry .logo-wrap img {
-      width: 100%;
-      height: 190px;
-      max-width: none;
-      max-height: none;
-      object-fit: cover;
-    }
-
-    .poetry .preview-name {
-      position: absolute;
-      inset: 0 auto 0 0;
-      display: flex;
-      align-items: center;
-      width: 52%;
-      padding-left: 7%;
-      background: linear-gradient(90deg, rgba(237, 235, 246, .99) 0 78%, rgba(237, 235, 246, 0));
-      color: #3f497c;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(20px, 2.2vw, 29px);
-      font-weight: 700;
-      letter-spacing: -.035em;
-    }
 
     footer {
       display: flex;
@@ -159,15 +127,9 @@
 
     footer p { max-width: 620px; margin: 0; }
 
-    @media (max-width: 960px) {
-      .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .project.poetry { grid-column: 1 / -1; }
-    }
-
     @media (max-width: 760px) {
       main { width: min(100% - 28px, 1080px); padding-top: 52px; }
       .projects { grid-template-columns: 1fr; margin-top: 38px; }
-      .project.poetry { grid-column: auto; }
       .project { min-height: 350px; padding: 22px; }
       footer { flex-direction: column; }
     }
@@ -177,7 +139,7 @@
   <main>
     <p class="eyebrow">Selected web work</p>
     <h1>Website Projects</h1>
-    <p class="intro">Three website projects, collected in one place and presented with permission.</p>
+    <p class="intro">Two company website projects, collected in one place and presented with permission.</p>
 
     <section class="projects" aria-label="Website projects">
       <a class="project fun" href="./funconnect/">
@@ -195,18 +157,6 @@
           <h2>TechConnect SME</h2>
           <p>AI-assisted financial document workflows for small businesses.</p>
           <span class="open">Open website →</span>
-        </div>
-      </a>
-
-      <a class="project poetry" href="./tang-poetry-aiot/">
-        <div class="logo-wrap">
-          <img src="./tang-poetry-aiot/project-preview.png" alt="FunConnect Tang poetry ambient intelligence project" />
-          <span class="preview-name" aria-hidden="true">FunConnect</span>
-        </div>
-        <div class="project-copy">
-          <h2>FunConnect</h2>
-          <p>An AIoT experience connecting live micro:bit sensor data with Tang poetry.</p>
-          <span class="open">View project →</span>
         </div>
       </a>
     </section>
